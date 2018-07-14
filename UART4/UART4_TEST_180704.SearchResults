@@ -1,0 +1,14 @@
+---- HAL_UART_MspDeInit Matches (5 in 3 files) ----
+Stm32f4xx_hal_msp.c (src):void HAL_UART_MspDeInit(UART_HandleTypeDef* huart)
+Stm32f4xx_hal_uart.c (drivers\stm32f4xx_hal_driver\src):  HAL_UART_MspDeInit(huart);
+Stm32f4xx_hal_uart.c (drivers\stm32f4xx_hal_driver\src): __weak void HAL_UART_MspDeInit(UART_HandleTypeDef *huart)
+Stm32f4xx_hal_uart.c (drivers\stm32f4xx_hal_driver\src):           the HAL_UART_MspDeInit could be implemented in the user file
+Stm32f4xx_hal_uart.h (drivers\stm32f4xx_hal_driver\inc):void HAL_UART_MspDeInit(UART_HandleTypeDef *huart);
+---- MemManage_Handler Matches (7 in 3 files) ----
+Stm32f4xx_it.c (src):void MemManage_Handler(void)
+Stm32f4xx_it.h (inc):void MemManage_Handler(void);
+UART4.htm (mdk-arm\uart4): <LI><a href="#[3]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[3]">MemManage_Handler</a><BR>
+UART4.htm (mdk-arm\uart4): <LI><a href="#[3]">MemManage_Handler</a> from stm32f4xx_it.o(i.MemManage_Handler) referenced from startup_stm32f405xx.o(RESET)
+UART4.htm (mdk-arm\uart4):<P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f4xx_it.o(i.MemManage_Handler))
+UART4.htm (mdk-arm\uart4):<BR><BR>[Calls]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+UART4.htm (mdk-arm\uart4):<BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
